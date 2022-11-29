@@ -36,8 +36,8 @@
 	margin-right: 30px;
 	margin-left:30px ;
 	margin-top:30px ;
-	background:url(https://i0.wp.com/emotioncard.com.br/wp-content/uploads/2019/04/plano-de-fundo-preto28.jpg?fit=2560%2C1600&ssl=1) ;
-	background-size:contain ;
+	background:url(fundo.jpg) ;
+	background-size:cover ;
 	background-attachment: fixed;
 	}
 	font.nome1{
