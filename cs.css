@@ -1,0 +1,180 @@
+ h6.gdikj{
+		font-family: Bahnschrift SemiBold;
+		font-size: 30px;
+		text-align:center ;
+		color:white ;
+	}
+	h2{
+		font-family:  comic sans ms;
+		font-size: 25px;
+		text-align:left ;
+		color:white ;
+	}
+	p{
+		font-size: 25px;
+		font-family: comic sans ms ;
+		text-align:left ;
+		color:white ;
+	}
+	li{
+		font-family:  comic sans ms;
+		font-size: 22px;
+		text-align:left ;
+		color:white ;
+	}
+	a{
+		color:yellow ;
+		text-decoration: none;
+	}
+	td{
+		border: 0px solid black;
+		width:700;
+	}
+	body{
+		background:url(fundo.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		margin-right: 30px;
+		margin-left:30px ;
+		margin-top:30px ;
+	}
+	font.nome1{
+		font-family: Bahnschrift SemiBold;
+		font-size: 30px;
+		text-align:center ;
+		color:rgb(255,128,0) ;
+	}
+	font.titulo1{
+		font-family: comic sans ms;
+		font-size: 25px;
+		text-align:center ;
+		color:rgb(255,128,0) ;
+	}
+	h1{
+		font-family: Bahnschrift SemiBold;
+		font-size: 30px;
+		text-align:center ;
+		color:white ;
+	}
+	font.mine{
+	    color:rgb(139,69,19) ;
+	    font-family:comic sans ms ;
+	    text-align: left;
+	    font-size:25px ;
+	    text-decoration: none;
+	}
+	font.craft{
+	    color:rgb(51,255,51) ;
+	    font-family:comic sans ms ;
+	    text-align: left;
+	    font-size:25px ;
+	    text-decoration: none;
+	}
+	font.call{
+	color:white ;
+	font-family:comic sans ms ;
+	text-align: left;
+	font-size:25px ;
+	}
+	font.duty{
+	color:rgb(236,113,18) ;
+	font-family:comic sans ms ;
+	text-align: left;
+	font-size:25px ;
+	}
+	font.fort{
+	color:rgb(30,144,255) ;
+	font-family:comic sans ms ;
+	text-align: left;
+	font-size:25px ;
+	}
+	font.nite{
+	color:rgb(186,85,211) ;
+	font-family:comic sans ms ;
+	text-align: left;
+	font-size:25px ;
+	}
+	font.over{
+	text-align:left ;
+	color:white ;
+	font-family:Comic Sans MS ;
+	font-size:25px ;
+	}
+	font.watch{
+ 	text-align:left ;
+	color:rgb(218,165,32) ;
+	font-family:Comic Sans MS ;
+	font-size:25px
+    }
+	.cell{
+		position: relative;
+		margin: 0 15;
+		width: 960px;
+		height: 540px;
+		overflow: hidden;
+		border-radius: 8px;
+	}
+	.cell img{
+		width: 100%;
+		height: 540px;
+		border-radius: 5px;
+		object-fit: cover;
+		display: block;
+	}
+	.overlay{
+		position: absolute;
+		inset: 0;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		transition: .5s ease-in-out;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	h2.text{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 26px;
+		color: #ffffff;
+		transform: translate( -50%, -50%);
+		text-align: center;
+		font-weight: bolder;
+	}
+	.cell:hover .overlay{
+		opacity: 1;
+	}
+    img.skins{
+    	width: 360;
+    	height: 360;
+    }
+	#icon{
+		position: absolute;
+		left: 500px;
+		border: solid black 1px;
+	}
+    #inicio{
+    	position: relative;
+    }
+    #central{
+    	width: auto;
+    	height: auto;
+    	position: relative;
+    }
+    #armas{
+    	left: 10;
+    	position: relative;
+    	width: 56%;
+    }
+    #skins{
+    	left: 1025;
+    	position: absolute;
+    	width: 30%;
+    	height: 40%;
+    }
+    #final{
+    	position: relative;
+    	width: 100%;
+    }
+	nav{
+		display: flex;
+	}
