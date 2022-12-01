@@ -50,6 +50,12 @@
 		text-align:center ;
 		color:rgb(255,128,0) ;
 	}
+	font.titulo2{
+		font-family: comic sans ms;
+		font-size: 25px;
+		text-align:center ;
+		color:#ffffff ;
+	}
 	h1{
 		font-family: Bahnschrift SemiBold;
 		font-size: 30px;
@@ -70,7 +76,7 @@
 	    font-size:25px ;
 	    text-decoration: none;
 	}
-	font.call{
+	font.branco{
 	color:white ;
 	font-family:comic sans ms ;
 	text-align: left;
@@ -92,12 +98,6 @@
 	color:rgb(186,85,211) ;
 	font-family:comic sans ms ;
 	text-align: left;
-	font-size:25px ;
-	}
-	font.over{
-	text-align:left ;
-	color:white ;
-	font-family:Comic Sans MS ;
 	font-size:25px ;
 	}
 	font.watch{
