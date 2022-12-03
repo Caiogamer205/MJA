@@ -125,10 +125,18 @@
 		position: absolute;
 		inset: 0;
 		opacity: 0;
+		top: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
 		transition: .5s ease-in-out;
 		background-color: rgba(0, 0, 0, 0.6);
+		color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		font-family: comic sans ms;
+		align-items: center;
+		justify-content: center;
 	}
 	h2.text{
 		position: absolute;
