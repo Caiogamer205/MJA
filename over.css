@@ -1,0 +1,295 @@
+h2{
+ 	text-align:left ;
+	color:white ;
+	font-family:Comic Sans MS ;
+	font-size:25px ;
+ }
+ p{
+ 	text-align:left ;
+	color:white ;
+	font-family:Comic Sans MS ;
+	font-size:25px ;
+ }
+ a{
+ 	text-align:left ;
+	color:rgb(218,165,32) ;
+	font-family:Comic Sans MS ;
+	font-size:25px ;
+	text-decoration: none;
+ }
+ font.titulo1{
+	color:white ;
+	font-family:comic sans ms ;
+	text-align: left;
+	font-size:25px ;
+}
+ body{
+ 	margin-top:30px ;
+ 	margin-left:30px ;
+	margin-right: 30px;
+ 	background: url(fundo.jpg) ;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ }
+ font.font1{
+ 	text-align:center ;
+	color:rgb(218,165,32) ;
+	font-family:Bahnschrift SemiBold ;
+	font-size:30px
+ }
+ font.font2{
+ 	text-align:left ;
+	color:rgb(218,165,32) ;
+	font-family:Comic Sans MS ;
+	font-size:25px
+ }
+ li{
+	font-family:  comic sans ms;
+	font-size: 22px;
+	text-align:left ;
+	color:white ;
+ }
+ h1{
+	text-align:center ;
+	color:white ;
+	font-family:Bahnschrift SemiBold ;
+	font-size:30px ;
+ }
+ td{
+	border: 0px solid black;
+	width:700;
+    }
+   img.skins{
+   	width: 256;
+   	height: 256;
+   }
+   table.herois{
+    border-radius: 5px;
+	border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-spacing:7px ;
+    }
+    td.herois{
+    font-family: comic sans ms;
+    border-style: solid;
+	border-width: 1px;
+    border-color:white;
+	width: 400;
+    height:30 ;
+	border-radius: 5px;
+    color: white;
+	font-size: 20px;
+    }
+    tr{
+    text-align: justify;
+    }
+    th{
+    font-family: calibri;
+    font-size: 24px;
+    color: orange;
+    }
+    #pos2{
+	position: relative;
+	left: 10px;
+	padding-top: 7px;
+    }
+    #pos1{
+	position: relative;
+	left: 10px;
+	padding-top: 7px;
+    }
+	nav{
+		display: flex;
+	}
+	.cell{
+		position: relative;
+		margin: 0 15;
+		width: 960px;
+		height: 540px;
+		overflow: hidden;
+		border-radius: 8px;
+	}
+	.cell img{
+		width: 100%;
+		height: 540px;
+		border-radius: 5px;
+		object-fit: cover;
+		display: block;
+	}
+	.overlay{
+		position: absolute;
+		inset: 0;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: .5s ease-in-out;
+		background-color: rgba(0, 0, 0, 0.6);
+		color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		font-family: comic sans ms;
+		align-items: center;
+		justify-content: center;
+	}
+	.title{
+		font-size: 2em;
+		font-weight: bold;
+		color: #ffffff;
+		text-align: center;
+	}
+	.cell:hover .overlay{
+		opacity: 1;
+	}
+	.card{
+		position: relative;
+		width: 256px;
+		height: 256px;
+		border-radius: 16px;
+		box-shadow: 0 0 13px 0 #ffffff;
+		transition: .3s;
+		overflow: hidden;
+		margin: .85rem;
+	}
+	.card:hover{
+		height: 430px;
+		background-color: #ffffff;
+	}
+	.card img{
+		width: 100%;
+		border-radius: 16px;
+		transition: .5s;
+	}
+	.card:hover img{
+		border-radius: 16px 16px 0 0;
+	}
+	.card .card-body{
+		padding:  .5rem .85rem 1rem;
+		height: 0;
+	}
+	.card .card-body h2{
+		margin: .5rem 0;
+		font-size: 20px;
+		color: #000;
+		text-align: center;
+		letter-spacing: 4px;
+	}
+	.card .card-body div{
+		text-align: right;
+		width: 100%;
+	}
+	.card .card-body img{
+		position: relative;
+		width: 38px;
+		height: 38px;
+	}
+	.card .card-body div a{
+		position: relative;
+		text-decoration: none;
+		color: #526ffd;
+		padding: .5rem;
+		text-align: center;
+		z-index: .85rem;
+		font-size: 17px;
+	}
+	.card .card-body div a::before{
+		position: absolute;
+		content: '';
+		width: 13px;
+		height: 13px;
+		background: #fff;
+		border-radius: 300px;
+		left: -13px;
+		top: 3px;
+		z-index: -1;
+		transition: .3s;
+	}
+	.card .card-body div a:hover{
+		color: #000;
+	}
+	.card .card-body div a:hover::before{
+		width: 100%;
+		height: 88%;
+		left: 0;
+	}
+	.card .card-body #btn{
+		background-color: #fff;
+		font-size: 17px;
+		color: #000;
+		font-family: comic sans ms;
+		border-radius: 8px;
+		border: 0px solid white;
+	}
+	.card .card-body #btn:hover{
+		transition: .3s;
+		background-color: #0031e6;
+		font-size: 17px;
+		color: #fff;
+		font-family: comic sans ms;
+		border-radius: 8px;
+		border: 0px solid white;
+	}
+	nav.mapas{
+		display: flex;
+		margin-right: 15px;
+	}
+	.btn{
+		text-decoration: none;
+		padding: 0.5rem 1rem;
+		background: #ffffff;
+		color: #000;
+		font-size: 14px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: .5s ease-in-out;
+		margin-left: 15px;
+	}
+	.btn:hover{
+		box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+	}
+    font.mine{
+	color:rgb(139,69,19) ;
+    font-family:comic sans ms ;
+    text-align: left;
+    font-size:25px ;
+    text-decoration: none;
+	}
+	font.craft{
+    color:rgb(51,255,51) ;
+    font-family:comic sans ms ;
+    text-align: left;
+    font-size:25px ;
+    text-decoration: none;
+	}
+	font.branco{
+	color:white ;
+	font-family:comic sans ms ;
+	text-align: left;
+	font-size:25px ;
+	}
+	font.duty{
+	color:rgb(236,113,18) ;
+	font-family:comic sans ms ;
+	text-align: left;
+	font-size:25px ;
+	}
+	font.fort{
+	color:rgb(30,144,255) ;
+	font-family:comic sans ms ;
+	text-align: left;
+	font-size:25px ;
+	}
+	font.nite{
+	color:rgb(186,85,211) ;
+	font-family:comic sans ms ;
+	text-align: left;
+	font-size:25px ;
+	}
+    font.s{
+	font-family: comic sans ms;
+	font-size: 25px;
+	text-align:center ;
+	color:rgb(255,128,0) ;
+	}
