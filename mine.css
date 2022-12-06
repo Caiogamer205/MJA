@@ -118,8 +118,8 @@ h2{
 		font-family: 'Poppins',sans-serif;
 	}
 	.slide ul li a img{
-		width: 25;
-		height: 25;
+		width: 35px;
+		height: 35px;
 	}
 	.slide ul li:hover a{
 		color: #fff;
