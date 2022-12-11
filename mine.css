@@ -103,6 +103,15 @@ h2{
 		pointer-events: none;
 		font-family: 'Poppins',sans-serif;
 	}
+	.slide h1.menu2{
+		color: #8000ff;
+		font-weight: 800;
+		text-align: right;
+		padding: 10px 0;
+		padding-right: 60px;
+		pointer-events: none;
+		font-family: 'Poppins',sans-serif;
+	}
 	.slide ul li{
 		list-style: none;
 		font-family: 'Poppins',sans-serif;
@@ -111,6 +120,8 @@ h2{
 		color: #011a41;
 		font-weight: 500;
 		padding: 5px 5;
+		margin-left: -20px;
+		padding-left: 15px;
 		display: block;
 		text-transform: capitalize;
 		text-decoration: none;
@@ -120,11 +131,6 @@ h2{
 	.slide ul li:hover a{
 		color: #fff;
 		background-color: #8000ff;
-	}
-	.slide ul li a i{
-		width: 40px;
-		text-align: center;
-		font-family: 'Poppins',sans-serif;
 	}
 	input{
 		display: none;
