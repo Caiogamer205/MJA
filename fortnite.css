@@ -1,9 +1,9 @@
-    h6.gdikj{
-	font-family: Bahnschrift SemiBold;
-	font-size: 30px;
-	text-align:center ;
-	color:white ;
-	}
+@import url('https://fonts.googleapis.com/css2?family= Poppins: wght @800 & display=swap');
+*{
+	/* margin: 0;
+	padding: 0;*/
+	box-sizing: border-box;
+}
 	h2{
 	font-family:  comic sans ms;
 	font-size: 25px;
