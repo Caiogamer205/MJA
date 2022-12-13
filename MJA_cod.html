@@ -115,11 +115,11 @@
 <h2><a name ="Mapas"><font class="titulo1">Top 5 Ma</font><font class="titulo2">pas</font>:</h2></a>
 <div class="carrousel">
 	<div class="cell"><a href="https://callofdutymaps.com/wp-content/uploads/nuketown2.jpg"><img src="https://callofdutymaps.com/wp-content/uploads/nuketown2.jpg"></a>
-	    <div class="overlay">
+	    <div class="overlay" id="blur">
 			<div class="title">Nuketown</div>
 			<p class="image__description">Call of Duty: Black Ops II</p>
 			<nav class="mapas">
-			<a class="btn" href="https://callofduty-fandom-com.translate.goog/wiki/Nuketown_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle()">Descrição</button>
 			<a class="btn" href="https://callofdutymaps.com/wp-content/uploads/nuketown2.jpg">Tela Cheia</a></nav>
 		</div>
 	</div>
@@ -128,7 +128,7 @@
 			<div class="title">Crash</div>
 			<p class="image__description">Call of Duty: Modern Warfare 4</p>
 			<nav class="mapas">
-			<a class="btn" href="https://callofduty-fandom-com.translate.goog/wiki/Crash_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle2()">Descrição</button>
 			<a class="btn" href="https://callofdutymaps.com/wp-content/uploads/crashmobile1.jpg">Tela Cheia</a></nav>
 		</div></a>
 	</div>
@@ -160,6 +160,18 @@
 		</div></a>
 	</div>
 </div>
+<div class="popup" id="popup">
+	<h2>Descrição</h2>
+	<p>O mapa é baseado em um típico subúrbio dos Estados Unidos da década de 1950 usado para demonstrar os efeitos de uma arma nuclear em uma área residencial; manequins, bem como edifícios e veículos acessíveis aparecem em todo o mapa. No final de cada jogo jogado em Nuketown, uma bomba nuclear explode durante a sequência do placar.</p>
+	<a class="btn2" href="https://callofduty-fandom-com.translate.goog/wiki/Nuketown_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle()">Fechar</button>
+</div>
+<div class="popup" id="popup2">
+	<h2>Descrição</h2>
+	<p>Crash é um dos menores mapas disponíveis atualmente. Pego de Call of Duty: Modern Warfare, ele oferece vários prédios para serem usados como barreira de proteção. Um sonho para qualquer amante da SMG. Nesse mapa, você terá inúmeras oportunidades de correr e atirar pelos corredores, entrando e saindo de coberturas, ao mesmo tempo que evita cair numa emboscada.</p>
+	<a class="btn2" href="https://callofduty-fandom-com.translate.goog/wiki/Crash_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle2()">Fechar</button>
+</div>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script type="text/javascript">
 	$('.carrousel').flickity({
@@ -168,6 +180,8 @@
 	wrapAround:true,
 	freeScroll: true
 });
+</script>
+<script type="text/javascript">
 </script>
 <!--Final do Carrossel-->
 <h2>Personagens mais famosos do jogo :</h2>

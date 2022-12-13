@@ -41,3 +41,15 @@ function cod(){
         document.getElementById("img").innerHTML = "<img src = 'IMG_Personagens_COD/Menendez.jpg' width = '190' height = '235'>";
     }
 }
+function toggle(){
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active')
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active')
+}
+function toggle2(){
+    var blur2 = document.getElementById('blur2');
+    blur2.classList.toggle('active')
+    var popup2 = document.getElementById('popup2');
+    popup2.classList.toggle('active')
+}
