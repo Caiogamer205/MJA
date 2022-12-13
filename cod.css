@@ -190,6 +190,7 @@
 		opacity: 1;
 		transition: 0.5s;
 		top: 50%;
+		z-index: 1;
 	}
 	.popup h2{
 		color: #000;
