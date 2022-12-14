@@ -292,17 +292,6 @@
 		left: 500px;
 		border: solid black 1px;
 	}
-    #armas{
-    	left: 10;
-    	position: relative;
-    	width: 56%;
-    }
-    #skins{
-    	left: 1025;
-    	position: absolute;
-    	width: auto;
-    	height: auto;
-    }
 	nav{
 		display: flex;
 	}
