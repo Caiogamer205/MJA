@@ -9,7 +9,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="cod.js"></script>
 </head> 
-<body> 
+<body>
+<div class="container" id="blur">
 <label>
 	<input type="checkbox">
 	<div class="toggle">
@@ -115,7 +116,7 @@
 <h2><a name ="Mapas"><font class="titulo1">Top 5 Ma</font><font class="titulo2">pas</font>:</h2></a>
 <div class="carrousel">
 	<div class="cell"><a href="https://callofdutymaps.com/wp-content/uploads/nuketown2.jpg"><img src="https://callofdutymaps.com/wp-content/uploads/nuketown2.jpg"></a>
-	    <div class="overlay" id="blur">
+	    <div class="overlay">
 			<div class="title">Nuketown</div>
 			<p class="image__description">Call of Duty: Black Ops II</p>
 			<nav class="mapas">
@@ -137,7 +138,7 @@
 			<div class="title">Raid</div>
 			<p class="image__description">Call of Duty: Black Ops II</p>
 			<nav class="mapas">
-			<a class="btn" href="https://callofduty-fandom-com.translate.goog/wiki/Raid?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle3()">Descrição</button>
 			<a class="btn" href="https://callofdutymaps.com/wp-content/uploads/raid1.jpg">Tela Cheia</a></nav>
 		</div></a>
 	</div>
@@ -146,7 +147,7 @@
 			<div class="title">Terminal</div>
 			<p class="image__description">Call of Duty: Modern Warfare 2</p>
 			<nav class="mapas">
-			<a class="btn" href="https://callofduty-fandom-com.translate.goog/wiki/Terminal_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle4()">Descrição</button>
 			<a class="btn" href="https://callofdutymaps.com/wp-content/uploads/terminal1.jpg">Tela Cheia</a></nav>
 		</div></a>
 	</div>
@@ -155,22 +156,10 @@
 			<div class="title">Summit</div>
 			<p class="image__description">Call of Duty: Black Ops 4</p>
 			<nav class="mapas">
-			<a class="btn" href="https://callofduty-fandom-com.translate.goog/wiki/Summit?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle5()">Descrição</button>
 			<a class="btn" href="https://callofdutymaps.com/wp-content/uploads/summit1.jpg">Tela Cheia</a></nav>
 		</div></a>
 	</div>
-</div>
-<div class="popup" id="popup">
-	<h2>Descrição</h2>
-	<p>O mapa é baseado em um típico subúrbio dos Estados Unidos da década de 1950 usado para demonstrar os efeitos de uma arma nuclear em uma área residencial; manequins, bem como edifícios e veículos acessíveis aparecem em todo o mapa. No final de cada jogo jogado em Nuketown, uma bomba nuclear explode durante a sequência do placar.</p>
-	<a class="btn2" href="https://callofduty-fandom-com.translate.goog/wiki/Nuketown_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
-	<button class="btn2" onclick="toggle()">Fechar</button>
-</div>
-<div class="popup" id="popup2">
-	<h2>Descrição</h2>
-	<p>Crash é um dos menores mapas disponíveis atualmente. Pego de Call of Duty: Modern Warfare, ele oferece vários prédios para serem usados como barreira de proteção. Um sonho para qualquer amante da SMG. Nesse mapa, você terá inúmeras oportunidades de correr e atirar pelos corredores, entrando e saindo de coberturas, ao mesmo tempo que evita cair numa emboscada.</p>
-	<a class="btn2" href="https://callofduty-fandom-com.translate.goog/wiki/Crash_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
-	<button class="btn2" onclick="toggle2()">Fechar</button>
 </div>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script type="text/javascript">
@@ -214,6 +203,36 @@
 <td><li><a href="/MJA_Minecraft.html"><font class="mine">Mine</font><font class="craft">craft</font></a></li></td>
 <td><li><a href="/MJA_fortnite.html"><font class="fort">Fort</font><font class="nite">nite</font></a></li></td></tr>
 <tr><td><li><a href="/MJA_OVER.html"><font class="branco">Over</font><font class="watch">watch</font></a></li></td>
-<td><li><a href="/MJA_CS.html"><font class="branco">C</font><font class="s">S</font></a></li></ul></td></tr></table>
+<td><li><a href="/MJA_CS.html"><font class="branco">C</font><font class="s">S</font></a></li></ul></td></tr></table></div>
+<div class="popup" id="popup">
+	<h2>Descrição: Nuketown</h2>
+	<p>O mapa é baseado em um típico subúrbio dos Estados Unidos da década de 1950 usado para demonstrar os efeitos de uma arma nuclear em uma área residencial; manequins, bem como edifícios e veículos acessíveis aparecem em todo o mapa. No final de cada jogo jogado em Nuketown, uma bomba nuclear explode durante a sequência do placar.</p>
+	<a class="btn2" href="https://callofduty-fandom-com.translate.goog/wiki/Nuketown_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle()">Fechar</button>
+</div>
+<div class="popup" id="popup2">
+	<h2>Descrição: Crash</h2>
+	<p>Crash é um dos menores mapas disponíveis atualmente. Pego de Call of Duty: Modern Warfare, ele oferece vários prédios para serem usados como barreira de proteção. Um sonho para qualquer amante da SMG. Nesse mapa, você terá inúmeras oportunidades de correr e atirar pelos corredores, entrando e saindo de coberturas, ao mesmo tempo que evita cair numa emboscada.</p>
+	<a class="btn2" href="https://callofduty-fandom-com.translate.goog/wiki/Crash_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle2()">Fechar</button>
+</div>
+<div class="popup" id="popup3">
+	<h2>Descrição: Raid</h2>
+	<p>Raid se passa em uma grande mansão em Hollywood Hills, Los Angeles, EUA. O mapa coloca o FBI contra os Mercs . O mapa tem pistas longas para franco-atiradores e outras armas de médio a longo alcance, mas é considerado um mapa de curta distância devido ao número de combates de curto alcance.</p>
+	<a class="btn2" href="https://callofduty-fandom-com.translate.goog/wiki/Raid?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle3()">Fechar</button>
+</div>
+<div class="popup" id="popup4">
+	<h2>Descrição: Terminal</h2>
+	<p>Este mapa, que é um terminal de aeroporto, está cheio de bagagens, bares e lojinhas; a área externa do mapa, onde aviões e cargas estão estacionados, tem muitas áreas minúsculas que também são acessíveis. Os jogadores podem entrar em um avião, que possui assentos realistas dentro dele, com exceção dos assentos da cabine.</p>
+	<a class="btn2" href="https://callofduty-fandom-com.translate.goog/wiki/Terminal_(map)?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle4()">Fechar</button>
+</div>
+<div class="popup" id="popup5">
+	<h2>Descrição: Summit</h2>
+	<p>Summit é um mapa estreito com grandes quedas em todos os lados. O mapa apresenta terreno nevado. Possui muita variedade quando se trata de edifícios e plataformas. O interior de um grande edifício no meio é a área mais aberta no mapa do Summit, com a maior parte composta de passagens estreitas e caminhos.</p>
+	<a class="btn2" href="https://callofduty-fandom-com.translate.goog/wiki/Summit?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle5()">Fechar</button>
+</div>
 </body> 
 </html> 

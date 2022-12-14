@@ -166,9 +166,12 @@
 		align-items: center;
 		justify-content: center;
 	}
-	.overlay#blur.active{
+	.container{
+		position: relative;
+		width: auto;
+	}
+	.container#blur.active{
 		filter: blur(20px);
-		pointer-events: none;
 		user-select: none;
 	}
 	.popup{
@@ -222,6 +225,7 @@
 		transition: .5s ease-in-out;
 		margin-left: 15px;
 		border: 1px solid white;
+		display: inline-block;
 	}
 	.btn:hover{
 		box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
@@ -236,7 +240,6 @@
 		font-family: comic sans ms;
 		cursor: pointer;
 		transition: .5s ease-in-out;
-		margin-left: 15px;
 		border: 1px solid black;
 	}
 	.btn2:hover{
@@ -252,6 +255,7 @@
 		transition: 0.5s ease;
 		transform: translateX(-180px);
 		font-family: 'Poppins',sans-serif;
+		z-index: 5;
 	}
 	.slide h1{
 		color: #8000ff;
@@ -302,7 +306,7 @@
 		width: 30px;
 		top: 37px;
 		left: 15px;
-		z-index: 1;
+		z-index: 6;
 		cursor: pointer;
 		border-radius: 2px;
 		background-color: #fff;
