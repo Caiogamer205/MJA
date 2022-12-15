@@ -6,8 +6,10 @@
 <link rel="shortcut icon" href="cs.png">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="cs.js"></script>
 <title>Melhores Jogos Da Atualidade : CS </title> 
 <body>
+<div class="container" id="blur">
 <label>
 	<input type="checkbox">
 	<div class="toggle">
@@ -34,8 +36,6 @@
 		</ul>
 	</div>
 </label>
-<div id="central">
-<div id="inicio">
 <h1>Melhores Jogos Da Atualidade :</h1>
 <h1>C<font class="nome1">S</font></h1>
 <table>
@@ -135,45 +135,50 @@
 <!--Carrossel de Imagens-->
 <h2><a name="Mapas"><font class="titulo2">Top 5 Ma</font><font class="titulo1">pas</font><font class="titulo2">:</font></h2></a>
 <div class="carrousel">
-	<div class="cell"><a href=""><img src="/IMG_Mapas_CS/Shortdust.jpg">
+	<div class="cell"><img src="/IMG_Mapas_CS/Shortdust.jpg">
 	    <div class="overlay">
 			<div class="title">Shortdust</div>
+			<br>
 			<nav class="mapas">
-			<a class="btn" href="https://counterstrike-fandom-com.translate.goog/wiki/Shortdust?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle()">Descrição</button>
 			<a class="btn" href="/IMG_Mapas_CS/Shortdust.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
-	<div class="cell"><a href=""><img src="/IMG_Mapas_CS/Inferno.jpg">
+	<div class="cell"><img src="/IMG_Mapas_CS/Inferno.jpg">
 		<div class="overlay">
 			<div class="title">Inferno</div>
+			<br>
 			<nav class="mapas">
-			<a class="btn" href="https://counterstrike-fandom-com.translate.goog/wiki/Inferno?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle2()">Descrição</button>
 			<a class="btn" href="/IMG_Mapas_CS/Inferno.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
-	<div class="cell"><a href=""><img src="/IMG_Mapas_CS/Cache.jpg">
+	<div class="cell"><img src="/IMG_Mapas_CS/Cache.jpg">
 		<div class="overlay">
 			<div class="title">Cache</div>
+			<br>
 			<nav class="mapas">
-			<a class="btn" href="https://counterstrike-fandom-com.translate.goog/wiki/Cache?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle3()">Descrição</button>
 			<a class="btn" href="/IMG_Mapas_CS/Cache.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
-	<div class="cell"><a href=""><img src="/IMG_Mapas_CS/Overpass.jpg">
+	<div class="cell"><img src="/IMG_Mapas_CS/Overpass.jpg">
 		<div class="overlay">
 			<div class="title">Overpass</div>
+			<br>
 			<nav class="mapas">
-			<a class="btn" href="https://counterstrike-fandom-com.translate.goog/wiki/Overpass?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle4()">Descrição</button>
 			<a class="btn" href="/IMG_Mapas_CS/Overpass.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
-	<div class="cell"><a href=""><img src="/IMG_Mapas_CS/Mirage.jpg">
+	<div class="cell"><img src="/IMG_Mapas_CS/Mirage.jpg">
 		<div class="overlay">
 			<div class="title">Mirage</div>
+			<br>
 			<nav class="mapas">
-			<a class="btn" href="https://counterstrike-fandom-com.translate.goog/wiki/Mirage?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle5()">Descrição</button>
 			<a class="btn" href="/IMG_Mapas_CS/Mirage.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
 </div>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -201,7 +206,37 @@
 <td><li><a href="/MJA_Minecraft.html"><font class="mine">Mine</font><font class="craft">craft</font></a></li></td>
 <td><li><a href="/MJA_cod.html"><font class="branco">Call</font> of <font class="duty">Duty</font></a></li></td></tr>
 <tr><td><li><a href="/MJA_fortnite.html"><font class="fort">Fort</font><font class="nite">nite</font></a></li></td>
-<td><li><a href="/MJA_OVER.html"><font class="branco">Over</font><font class="watch">watch</font></a></li></td></tr></table>
+<td><li><a href="/MJA_OVER.html"><font class="branco">Over</font><font class="watch">watch</font></a></li></td></tr></table></div>
+<div class="popup" id="popup">
+	<h2>Descrição: Shortdust</h2>
+	<p>Shortdust é uma versão modificada do mapa Dust , apresentando apenas um bombsite com a maior parte do mapa cortada. Há também várias outras mudanças. Bombsite A foi movido para o interior do palácio e a Terrorist Spawn Zone está localizada na passagem subterrânea.</p>
+	<a class="btn2" href="https://counterstrike-fandom-com.translate.goog/wiki/Shortdust?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle()">Fechar</button>
+</div>
+<div class="popup" id="popup2">
+	<h2>Descrição: Inferno</h2>
+	<p>O mapa se passa em uma pequena cidade com arquitetura européia. Na versão da Ofensiva Global , a presença da facção Separatista sugere que o mapa está definitivamente situado na Itália, como evidenciado pelas placas escritas em italiano vistas ao redor do mapa.</p>
+	<a class="btn2" href="https://counterstrike-fandom-com.translate.goog/wiki/Inferno?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle2()">Fechar</button>
+</div>
+<div class="popup" id="popup3">
+	<h2>Descrição: Cache</h2>
+	<p>O mapa se passa em Pripyat, na Ucrânia. A usina de energia de Chernobyl é visível a partir do spawn do terrorista, junto com edifícios próximos e até material de vedação consistente com a contraparte da vida real. Originalmente um mapa personalizado para Counter-Strike: Source , foi refeito para Counter-Strike: Global Offensive com reequilíbrios para corrigir os problemas do lado terrorista do original.</p>
+	<a class="btn2" href="https://counterstrike-fandom-com.translate.goog/wiki/Cache?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle3()">Fechar</button>
+</div>
+<div class="popup" id="popup4">
+	<h2>Descrição: Overpass</h2>
+	<p>O cenário do mapa é um viaduto de canal e o parque construído acima dele em Berlim, Alemanha. O GSG-9 deve proteger um carregamento militar parado em um viaduto de canal, enquanto o Phoenix Connexion pode atacar o carregamento de frente ou tentar destruir o próprio viaduto bombardeando o pilar abaixo.</p>
+	<a class="btn2" href="https://counterstrike-fandom-com.translate.goog/wiki/Overpass?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle4()">Fechar</button>
+</div>
+<div class="popup" id="popup5">
+	<h2>Descrição: Mirage</h2>
+	<p>O mapa tem como tema uma cidade do Oriente Médio, mas devido à sua grande semelhança com a arquitetura de estilo marroquino, é provável que esteja em algum lugar do Marrocos. </p>
+	<a class="btn2" href="https://counterstrike-fandom-com.translate.goog/wiki/Mirage?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle5()">Fechar</button>
+</div>
 </body> 
 </head> 
 </html> 
