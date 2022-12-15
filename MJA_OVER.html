@@ -7,8 +7,10 @@
 <link rel="stylesheet" type="text/css" href="over.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="over.js"></script>
 </head>
 <body>
+<div class="container" id="blur">
 <label>
 	<input type="checkbox">
 	<div class="toggle">
@@ -249,45 +251,45 @@
 <!--Carrossel de Imagens-->
 <h2><a name="Mapas"><font class="titulo1">Top 5 Ma</font><font class="font2">pas</font><font class="titulo1">:</font></h2></a>
 <div class="carrousel">
-	<div class="cell"><a href=""><img src="IMG Mapas Overwatch/Kings_Row.jpg">
+	<div class="cell"><img src="IMG Mapas Overwatch/Kings_Row.jpg">
 	    <div class="overlay">
 			<h2 class="text">Kings Row</h2>
 			<nav class="mapas">
-			<a class="btn" href="https://overwatch-fandom-com.translate.goog/wiki/King%27s_Row?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle()">Descrição</button>
 			<a class="btn" href="IMG Mapas Overwatch/Kings_Row.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
-	<div class="cell"><a href=""><img src="IMG Mapas Overwatch/Hollywood.jpg">
+	<div class="cell"><img src="IMG Mapas Overwatch/Hollywood.jpg">
 		<div class="overlay">
 			<h2 class="text">Hollywood</h2>
 			<nav class="mapas">
-			<a class="btn" href="https://overwatch-fandom-com.translate.goog/wiki/Hollywood?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle2()">Descrição</button>
 			<a class="btn" href="IMG Mapas Overwatch/Hollywood.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
-	<div class="cell"><a href=""><img src="IMG Mapas Overwatch/Eichenwalde.jpg">
+	<div class="cell"><img src="IMG Mapas Overwatch/Eichenwalde.jpg">
 		<div class="overlay">
 			<h2 class="text">Eichenwalde</h2>
 			<nav class="mapas">
-			<a class="btn" href="https://overwatch-fandom-com.translate.goog/wiki/Eichenwalde?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle3()">Descrição</button>
 			<a class="btn" href="IMG Mapas Overwatch/Eichenwalde.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
-	<div class="cell"><a href=""><img src="IMG Mapas Overwatch/Nepal.jpg">
+	<div class="cell"><img src="IMG Mapas Overwatch/Nepal.jpg">
 		<div class="overlay">
 			<h2 class="text">Nepal</h2>
 			<nav class="mapas">
-			<a class="btn" href="https://overwatch-fandom-com.translate.goog/wiki/Nepal?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle4()">Descrição</button>
 			<a class="btn" href="IMG Mapas Overwatch/Nepal.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
-	<div class="cell"><a href=""><img src="IMG Mapas Overwatch/Blizzard_World.jpg">
+	<div class="cell"><img src="IMG Mapas Overwatch/Blizzard_World.jpg">
 		<div class="overlay">
 			<h2 class="text">Blizzard World</h2>
 			<nav class="mapas">
-			<a class="btn" href="https://overwatch-fandom-com.translate.goog/wiki/Blizzard_World?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Descrição</a>
+			<button class="btn" onclick="toggle5()">Descrição</button>
 			<a class="btn" href="IMG Mapas Overwatch/Blizzard_World.jpg">Tela Cheia</a></nav>
-		</div></a>
+		</div>
 	</div>
 </div>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -312,6 +314,36 @@
 <td><li><a href="/MJA_Minecraft.html"><font class="mine">Mine</font><font class="craft">craft</font></a></li></td>
 <td><li><a href="/MJA_cod.html"><font class="branco">Call</font> of <font class="duty">Duty</font></a></li></td></tr>
 <tr><td><li><a href="/MJA_fortnite.html"><font class="fort">Fort</font><font class="nite">nite</font></a></li></td>
-<td><li><a href="/MJA_CS.html"><font class="branco">C</font><font class="s">S</font></a></li></ul></td></tr></table>
+<td><li><a href="/MJA_CS.html"><font class="branco">C</font><font class="s">S</font></a></li></ul></td></tr></table></div>
+<div class="popup" id="popup">
+	<h2>Descrição: Kings Row</h2>
+	<p>King's Row é um bairro sofisticado e cosmopolita de Londres, Inglaterra, mas logo abaixo de sua superfície pacífica, as tensões entre os ômnicos e os humanos estão aumentando. Embora grande parte da Grã-Bretanha moderna tenha sido construída nas costas de trabalhadores ômnicos, eles foram negados os direitos básicos que os humanos têm, com a maioria dos ômnicos forçados a viver na densa e claustrofóbica cidade-sob-a-cidade conhecida por alguns como "o submundo".</p>
+	<a class="btn2" href="https://overwatch-fandom-com.translate.goog/wiki/King%27s_Row?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle()">Fechar</button>
+</div>
+<div class="popup" id="popup2">
+	<h2>Descrição: Hollywood</h2>
+	<p>Bem-vindo ao brilho e glamour de Hollywood, Califórnia, onde palmeiras e carros luxuosos se alinham nas ruas, e estrelas de cinema, diretores e poderosos executivos de estúdio se encontram para um bate-papo e uma bebida no Galand's.</p>
+	<a class="btn2" href="https://overwatch-fandom-com.translate.goog/wiki/Hollywood?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle2()">Fechar</button>
+</div>
+<div class="popup" id="popup3">
+	<h2>Descrição: Eichenwalde</h2>
+	<p>Eichenwalde é um mapa híbrido que ocorre em três locais principais: a cidade, o terreno do castelo e o interior do castelo. A cidade foi palco de uma das batalhas mais famosas durante a Crise Ômnica . Foi aqui que o líder dos cruzados , Balderich von Adler , e um punhado de seus melhores soldados, incluindo seu pupilo, Reinhardt Wilhelm , fizeram uma última resistência contra um exército de autômatos que avançava .</p>
+	<a class="btn2" href="https://overwatch-fandom-com.translate.goog/wiki/Eichenwalde?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle3()">Fechar</button>
+</div>
+<div class="popup" id="popup4">
+	<h2>Descrição: Nepal</h2>
+	<p>Anos atrás, um grupo de robôs ômnicos experimentou o que eles descreveram como um despertar espiritual. Eles abandonaram suas vidas programadas para estabelecer um monastério no alto do Himalaia, onde ômnicos com ideias semelhantes pudessem se reunir para meditar sobre a natureza de sua existência.</p>
+	<a class="btn2" href="https://overwatch-fandom-com.translate.goog/wiki/Nepal?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle4()">Fechar</button>
+</div>
+<div class="popup" id="popup5">
+	<h2>Descrição: Blizzard World</h2>
+	<p>Veja suas memórias de jogo favoritas ganharem vida no novo mapa híbrido de Overwatch enquanto você ataca e defende a carga em Azeroth. O parque foi construído em Irvine, Califórnia, e tem como tema os mundos da Blizzard Entertainment .</p>
+	<a class="btn2" href="https://overwatch-fandom-com.translate.goog/wiki/Blizzard_World?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc">Saiba mais</a>
+	<button class="btn2" onclick="toggle5()">Fechar</button>
+</div>
 </body> 
 </html> 
