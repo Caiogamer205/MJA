@@ -121,6 +121,7 @@
 	}
 	nav{
 		display: flex;
+		width: auto;
 	}
 	nav.mapas{
 		display: flex;
@@ -131,7 +132,7 @@
 		font-family: comic sans ms ;
 		text-align:left ;
 		color:white ;
-		width: 1250px;
+		width: auto;
 		padding: 5px;
 	}
 	.cell{
