@@ -230,8 +230,8 @@ h2{
 	font-size: 25px;
     }
     img.luiz{
-	width: 1400;
-	height: 560;
+	width: auto;
+	height: auto;
     }
     font.branco{
 	color:white ;
