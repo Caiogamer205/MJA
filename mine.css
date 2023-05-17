@@ -84,7 +84,7 @@ h2{
 		width:700;
 	}
 	.slide{
-		height: auto;
+		height: 100%;
 		width: 200px;
 		position: fixed;
 		top: 0;
