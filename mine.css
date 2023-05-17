@@ -133,6 +133,10 @@ h2{
 		color: #fff;
 		background-color: #8000ff;
 	}
+        .slide img{
+		width: 200px;
+		height: 200px;
+	}
 	input{
 		display: none;
 		visibility: hidden;
