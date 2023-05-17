@@ -94,6 +94,8 @@ h2{
 		transform: translateX(-180px);
 		z-index: 5;
 		font-family: 'Poppins',sans-serif;
+		scroll-behavior: auto;
+		scrollbar-track-color: #8000ff;
 	}
 	.slide h1{
 		color: #8000ff;
