@@ -1,39 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <title>Melhores Jogos da Atualidade Página Inicial</title>
-<link rel="stylesheet" type="text/css" href="inicial.css">
+<link rel="stylesheet" type="text/css" href="./inicial.css">
+<script src="./inicial.js" defer></script>
 <link rel="shortcut icon" href="games.png">
 </head>
 <body>
-<h1>Melhores Jogos da Atualidade:</h1>
-<h2 class="texto">Página Inicial</h2>
-<h2>Objetivo:</h2>
-<p>Apresentar informações sobre alguns jogos que a maioria das pessoas já jogou, quer jogar, conhece ou já ouviu falar. Os jogos são: Minecraft, Call of Duty, Fortnite, Overwatch e CS (Counter Strike).</p>
-<p>Confira os Sites Abaixo Clicando no Nome ou na Imagem:</p>
-<center>
-<table class="sites">
-<tr>
-<td><a href="/MJA_Minecraft.html"><img src="https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/minecraft-creeper-face.jpg" height="250" width="250"></a></td>
-<td><a href="/MJA_cod.html"><img src="https://gamersrd.com/wp-content/uploads/2019/05/61177239_2498303340231375_8354598460380413952_n.jpg" height="250" width="250"></a></td>
-<td><a href="/MJA_fortnite.html"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png" height="250" width="250"></td></a></tr>
-<tr>
-<td><a href="/MJA_Minecraft.html"><font class="mine">Mine</font><font class="craft">craft</font></a></td>
-<td><a href="/MJA_cod.html"><font class="branco">Call</font><font class="of"> of</font><font class="duty"> Duty</font></a></td>
-<td><a href="/MJA_fortnite.html"><font class="fort">Fort</font><font class="nite">nite</font></a></td></tr></table></center>
-<br>
-<center>
-<table class="sites2">
-<nav>
-<tr>
-<td><a href="/MJA_OVER.html"><img src="data:image/png;base64,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" height="250" width="250"></a></td>
-<td><a href="/MJA_CS.html"><img src="data:image/png;base64,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" width="250" height="250"></a></td>
-</tr>
-<tr>
-<td><a href="/MJA_OVER.html"><font class="branco">Over</font><font class="watch">watch</font></a></td>
-<td><a href="/MJA_CS.html"><font class="branco">C</font><font class="s">S</font></a></td></tr></nav></table></center>
-<p>Criador: Caio Santos, 16 anos, Minecraft.</p>
+<div class="container">
+    <div class="card active">
+      <img class="background" src="./assets/minecraft.jpg" alt="">
 
+      <div class="card-content">
+        <div class="profile-image">
+            <a href="/MJA_Minecraft.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+            <line x1="6" x2="10" y1="11" y2="11" />
+            <line x1="8" x2="8" y1="9" y2="13" />
+            <line x1="15" x2="15.01" y1="12" y2="12" />
+            <line x1="18" x2="18.01" y1="10" y2="10" />
+            <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+          </svg></a>
+        </div>
+
+        <h3 class="title">Minecraft</h3>
+      </div>
+      <div class="backdrop"></div>
+    </div>
+
+    <div class="card">
+      <img class="background" src="./assets/call of duty.jpg" alt="">
+
+      <div class="card-content">
+        <div class="profile-image">
+            <a href="/MJA_cod.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+            <line x1="6" x2="10" y1="11" y2="11" />
+            <line x1="8" x2="8" y1="9" y2="13" />
+            <line x1="15" x2="15.01" y1="12" y2="12" />
+            <line x1="18" x2="18.01" y1="10" y2="10" />
+            <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+          </svg></a>
+        </div>
+
+        <h3 class="title">Call of Duty</h3>
+      </div>
+      <div class="backdrop"></div>
+    </div>
+
+    <div class="card">
+      <img class="background" src="./assets/fortnite.jpg" alt="">
+
+      <div class="card-content">
+        <div class="profile-image">
+            <a href="/MJA_fortnite.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+            <line x1="6" x2="10" y1="11" y2="11" />
+            <line x1="8" x2="8" y1="9" y2="13" />
+            <line x1="15" x2="15.01" y1="12" y2="12" />
+            <line x1="18" x2="18.01" y1="10" y2="10" />
+            <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+          </svg></a>
+        </div>
+
+        <h3 class="title">Fortnite</h3>
+      </div>
+      <div class="backdrop"></div>
+    </div>
+
+    <div class="card">
+      <img class="background" src="./assets/overwatch.jpg" alt="">
+
+      <div class="card-content">
+        <div class="profile-image">
+            <a href="/MJA_OVER.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+            <line x1="6" x2="10" y1="11" y2="11" />
+            <line x1="8" x2="8" y1="9" y2="13" />
+            <line x1="15" x2="15.01" y1="12" y2="12" />
+            <line x1="18" x2="18.01" y1="10" y2="10" />
+            <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+          </svg></a>
+        </div>
+
+        <h3 class="title">Overwatch</h3>
+      </div>
+      <div class="backdrop"></div>
+    </div>
+
+    <div class="card">
+      <img class="background" src="./assets/cs.jpg" alt="">
+
+      <div class="card-content">
+        <div class="profile-image">
+            <a href="/MJA_CS.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+            <line x1="6" x2="10" y1="11" y2="11" />
+            <line x1="8" x2="8" y1="9" y2="13" />
+            <line x1="15" x2="15.01" y1="12" y2="12" />
+            <line x1="18" x2="18.01" y1="10" y2="10" />
+            <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+          </svg></a>
+        </div>
+
+        <h3 class="title">Counter Strike</h3>
+      </div>
+      <div class="backdrop"></div>
+    </div>
+  </div>
 </body>
 </html>
