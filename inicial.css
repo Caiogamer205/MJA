@@ -18,12 +18,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 img {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.titulo {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  width: auto;
+  text-align: center;
 }
 
 .container {
@@ -63,7 +72,17 @@ img {
   z-index: -1;
   transition: var(--transition-timing) ease;
 }
-.card.active > .background {
+.card > .background2 {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8);
+  z-index: -1;
+  transition: var(--transition-timing) ease;
+}
+
+.card.active > .background .background2 {
   filter: brightness(1) grayscale(0);
 }
 
